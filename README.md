@@ -58,7 +58,8 @@ Block comments (/* comment */) are not currently highlighted.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 1.0.3
+- Updated readme to add info on Log File Highlighter to `README.md` (no behavioral changes)
 
 ### 1.0.0
 
