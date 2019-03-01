@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ScalaScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.scalascript",
+				"match": "(?i)\\b(if|elseif|else|while|until|return|goto|gotoexpr|jump|jumppage|use|useexpr|quit|exit|onnotification|hotkey)\\b"
+			},
+			{
+				"name": "constant.numeric",
+				"match": "(?i)\\b(true|false|on|off)\\b"
+			},
+			{
+				"name": "variable.language.this",
+				"match": "(?i)\\b(string|boolean|integer|real|filenamestring|scriptnamestring|object)\\b"
+			},
+			{
+				"name": "entity.name.tag",
+				"match": "(?i)\\b(group:|sequence:|resources:)(\\b|$)"
+			},
+			{
+				"name": "entity.name.tag",
+				"match": "(?i)^!scalascript[0-9]*"
+			},
+			{
+				"name": "storage.modifier",
+				"match": "(?i)\\b(external|template)\\b"
+			},
+			{
+				"name": "storage.modifier",
+				"match": "(?i)\\b(optional|noauthor|disabled)\\b"
+			},
+			{
+				"comment": "OK, but block comments not done",
+				"name": "comment.line.double-dash",
+				"match": "\/\/.*"
+			}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.scalascript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.scalascript",
+					"match": "\\^."
+				}
+			]
+		}
+	},
+	"scopeName": "source.scalascript"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "scalascript",
+    "displayName": "ScalaScript",
+    "description": "Visual Studio Code language support for ScalaScript digital signage scripting language (scala.com)",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "scalascript",
+            "aliases": ["ScalaScript", "scalascript"],
+            "extensions": [".sca"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "scalascript",
+            "scopeName": "source.scalascript",
+            "path": "./syntaxes/scalascript.tmLanguage.json"
+        }]
+    }
+}
