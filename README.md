@@ -20,8 +20,8 @@ Developed and tested with Visual Studio Code 1.31. Tested using various built-in
 None currently.
 
 ## Notes
-
-The author is not affiliated with scala.com.
+- Any trademarks and logos are the property of Scala Inc. or the trademark/logo owners
+- The author is not affiliated with scala.com.
 
 ## Known Issues
 
