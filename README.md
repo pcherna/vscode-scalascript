@@ -23,9 +23,38 @@ None currently.
 - Any trademarks and logos are the property of Scala Inc. or the trademark/logo owners
 - The author is not affiliated with scala.com.
 
+## Other Scala-Related Tips
+
+The [Log File Highlighter extension](https://marketplace.visualstudio.com/items?itemName=emilast.LogFileHighlighter) is handy for viewing Scala Designer and Player log files. Add the following custom patterns to your `settings.json` for optimal viewing. The final pattern is used to dim the end-of-line timecodes... make sure its `foreground` color is low-contrast to your background. (These values are chosen for a light background.)
+
+```
+    "logFileHighlighter.customPatterns": [
+        {
+            "pattern": "SCALA",
+            "foreground": "#AA0088"
+        },
+        {
+            "pattern": "RUNIC",
+            "foreground": "#00AA00"
+        },
+        {
+            "pattern": "NETIC",
+            "foreground": "#0000AA"
+        },
+        {
+            "pattern": "ERROR Problem [0-9]+, Error [0-9.]+:",
+            "foreground": "#CC0000"
+        },
+        {
+            "pattern": "\\|\\([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]\\)",
+            "foreground": "#CCCCCC"
+        }
+    ],
+```
+
 ## Known Issues
 
-Block comments (/* comment */ are not currently highlighted.
+Block comments (/* comment */) are not currently highlighted.
 
 ## Release Notes
 
