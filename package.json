@@ -2,7 +2,7 @@
     "name": "scalascript",
     "displayName": "ScalaScript",
     "description": "Visual Studio Code language support for ScalaScript digital signage scripting language (scala.com)",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "repository": "https://github.com/pcherna/vscode-scalascript",
     "publisher": "peter-cherna",
     "icon": "scalalogo.jpg",
